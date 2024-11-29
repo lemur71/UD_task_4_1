@@ -8,7 +8,7 @@ def get_known():
     return get_known_cve(10)
 
 def get_known_cve(max_quantity: int) -> list:
-    """retun all CVEs that is in ransomware campain use"""
+    """retun CVEs that is in ransomware campain use"""
     cve_dict = read_json()
     result = []
     for cve in cve_dict["vulnerabilities"]:
